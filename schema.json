@@ -131,7 +131,7 @@
               "ru"
             ],
             "label": "language",
-            "defaultValue": "pt"
+            "defaultValue": "en"
           },
           {
             "type": "event",
