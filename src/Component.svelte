@@ -73,7 +73,7 @@ options = {
     ...langs[codeLang(language)]
   }
   }
-  $ dataProvider.rows, calculateEvents();
+  $: dataProvider.rows, calculateEvents();
 
   const { styleable } = getContext("sdk") 
   const component = getContext("component")
