@@ -81,7 +81,7 @@ options = {
 </script>
 
 <div use:styleable={$component.styles}>
-  {# if options}
+  {#if options}
   <FullCalendar {options} />
   {/if}
 </div>
