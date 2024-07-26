@@ -41,55 +41,6 @@
             "type": "boolean",
             "key": "allday",
             "label": "AllDay Mapping"
-          },
-          {
-            "type": "color",
-            "label": "Color Mapping",
-            "key": "mappingColor",
-            "defaultValue": "#272727"
-          }
-        ]
-      },
-      {
-        "section": true,
-        "name": "Event Group 2",
-        "settings": [
-          {
-            "type": "dataProvider",
-            "label": "DataProvider",
-            "key": "dataProvider2",
-            "required": false
-          },
-          {
-            "type": "text",
-            "key": "mappingTitle2",
-            "label": "Title Mapping"
-          },
-          {
-            "type": "text",
-            "key": "mappingDate2",
-            "label": "Date Mapping"
-          },
-          {
-            "type": "text",
-            "key": "mappingStart2",
-            "label": "Start Mapping"
-          },
-          {
-            "type": "text",
-            "key": "mappingEnd2",
-            "label": "End Mapping"
-          },
-          {
-            "type": "boolean",
-            "key": "allday2",
-            "label": "AllDay Mapping"
-          },
-          {
-            "type": "color",
-            "label": "Color Mapping",
-            "key": "mappingColor2",
-            "defaultValue": "#000"
           }
         ]
       },
