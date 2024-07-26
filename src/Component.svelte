@@ -36,7 +36,9 @@
   export let headerOptionsEnd
 
   let eventsList = []
-  onMount(()=>{
+  let options;
+
+  function calculateEvents(){
     
     if(eventsList.length > 0){
       eventsList = []
@@ -47,16 +49,8 @@
         eventsList.push({ title: event[mappingTitle], date: event[mappingDate], start: event[mappingStart], end: event[mappingEnd], color: eventColor, event: event, allDay: allday   })        
       });
     }
-    if(dataProvider2.rows){
-      dataProvider2.rows.forEach(event => {
-        let eventColor2 = mappingColor2 ?? '#eb4034' 
-        eventsList.push({ title: event[mappingTitle2], date: event[mappingDate2], start: event[mappingStart2], end: event[mappingEnd2], color: eventColor2, event: event, allDay: allday2  })
-      });
-    }
-    eventsList = eventsList
-  })
-
-  let options  = {
+    eventsList = eventsList;
+{
     headerToolbar: {
       start: headerOptionsStart,
       center: headerOptionsCenter,
@@ -78,11 +72,16 @@
     theme: true,
     ...langs[codeLang(language)]
   }
+  }
+  $ dataProvider.rows, calculateEvents();
+
   const { styleable } = getContext("sdk") 
   const component = getContext("component")
 
 </script>
 
 <div use:styleable={$component.styles}>
+  {# if options}
   <FullCalendar {options} />
+  {/if}
 </div>
