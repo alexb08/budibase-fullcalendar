@@ -50,7 +50,7 @@
       });
     }
     eventsList = eventsList;
-{
+options = {
     headerToolbar: {
       start: headerOptionsStart,
       center: headerOptionsCenter,
